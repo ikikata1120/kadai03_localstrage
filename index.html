@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイポケット Ver.1_入力・記録</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ⭐ログイン画面⭐ -->
+     <section id="login-page">
+
+        <h1>マイポケット Ver.1</h1>
+        <p>あなたの想いを、そっと仕舞う場所。</p>
+
+        <div>
+            <label for="login-id">ログインID</label>
+            <input type="text" id="login-id">
+        </div>
+
+        <div>
+            <label for="login-password">パスワード</label>
+            <input type="password" id="login-password">
+        </div>
+
+        <button id="login-btn">ログイン</button>
+        <p id="login-error"></p>
+
+    </section>
+
+
+
+    <!-- ⭐⭐マイページ⭐⭐ -->
+     <section id="mypage">
+
+        <h1>マイページ</h1>
+        <p>今日の出来事・気持ち・価値観を、マイポケットに仕舞おう。</p>
+
+        <button id="go-input-btn">今日の気持ちをポケットに仕舞う</button>
+        <button id="go-records-btn">ポケットの中を見る</button>
+        <button id="logout-btn">ログアウト</button>
+
+     </section>
+
+
+
+    <!-- ⭐⭐⭐入力画面⭐⭐⭐ -->
+     <section id="input-page">
+
+        <h2>今日の気持ちをポケットに仕舞う</h2>
+        <p>いまの気持ちに目を向けてみよう</p>
+
+        <!-- 質問項目 -->
+        <div>
+            <label for="event">①今日はどんなことがあった？</label>
+            <textarea id="event" class="answer-box"></textarea>
+        </div>
+
+        <div>
+            <label for="emotion">② そのとき、どんな気持ちだった？</label>
+            <textarea id="emotion" class="answer-box"></textarea>
+        </div>
+
+        <div>
+            <label for="reason">③ どうして、そう感じたんだろう？</label>
+            <textarea id="reason" class="answer-box"></textarea>
+        </div>
+
+        <div>
+            <label for="value">④ 自分にとって、大切だったことは？</label>
+            <textarea id="value" class="answer-box"></textarea>
+        </div>
+
+        <button id="save-btn">ポケットに仕舞う</button>
+        <button id="input-back-btn">マイページに戻る</button>
+
+    </section>
+
+
+    <!-- ⭐⭐⭐⭐記録/閲覧画面⭐⭐⭐⭐ -->
+     <section id="records-page">
+        <h2>ポケットの中を見る</h2>
+        <p>これまでの自分の気持ち・価値観を振返ろう</p>
+
+        <button id="records-back-btn">マイページに戻る</button>
+
+        <!-- 保存されたデータを表示する場所 -->
+         <div id="records-list"></div>
+
+        
+     </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

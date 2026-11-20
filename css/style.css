@@ -1,0 +1,212 @@
+/* 画面全体のデザイン */
+body{
+    margin: 0;
+    background-color: #f3d2b5;
+    color: #333333;
+    font-family: "Noto Sans JP","Yu Gothic",sans-serif;
+}
+
+/* 各画面の共通デザイン */
+section{
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+    max-width: 1280px;
+    margin: 48px auto;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #E6EAE5;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(45, 65, 55, 0.06);
+
+
+/* ボタンの共通デザイン */
+button {
+    background-color: #B9E3F0;
+    color: #333333;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* マウスを乗せたときのデザイン */
+button:hover {
+    background-color: #92CFE3;
+}
+
+}
+
+
+/* 質問ごとの余白 */
+#input-page > div {
+    margin-bottom: 24px;
+}
+
+#input-page p {
+    font-size: 20px;
+}
+
+/* 質問文 */
+#input-page label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 回答の入力欄 */
+.answer-box {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    font: inherit;
+    resize: vertical;
+}
+
+
+
+/* 記録カード全体 */
+.record-card {
+    background-color: #B9E3F0;
+    border: 1px solid #92CFE3;
+    border-radius: 12px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+#records-page p {
+    font-size: 20px;
+}
+
+/* 記録一覧の上に余白を作る */
+#records-list {
+    margin-top: 24px;
+}
+
+/* 記録日時 */
+.record-card h3 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #72BED6;
+    font-size: 18px;
+}
+
+/* 記録内容 */
+.record-card p {
+    margin: 12px 0;
+    font-size: 18px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+
+/* ログイン画面のタイトル */
+#login-page h1 {
+    text-align: center;
+}
+
+/* ログイン画面の説明文 */
+#login-page > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* 入力欄ごとの余白 */
+#login-page > div {
+    margin-bottom: 20px;
+}
+
+/* ID・パスワードのラベル */
+#login-page label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ID・パスワードの入力欄 */
+#login-page input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    font: inherit;
+}
+
+/* ログインボタン */
+#login-btn {
+    width: 100%;
+}
+
+
+/* マイページのタイトルと説明 */
+#mypage h1,
+#mypage h2,
+#mypage p {
+    text-align: center;
+}
+
+#mypage p{
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+/* メインメニューボタン */
+#go-input-btn,
+#go-records-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+
+/* ログアウトボタン */
+#logout-btn {
+    display: block;
+    margin: 24px 0 0 auto;
+    padding: 10px 20px;
+    background-color: #EFF6F8;
+    font-size: 18px;
+}
+
+/* ログアウトボタンにマウスを乗せたとき */
+#logout-btn:hover {
+    background-color: #DCEEF3;
+}
+
+
+
+/* ⭐スマホ対応⭐ */
+
+/* スマートフォン用デザイン */
+@media screen and (max-width: 600px) {
+
+    /* 白い画面全体の余白 */
+    section {
+        width: calc(100% - 24px);
+        margin: 16px auto;
+        padding: 24px 20px;
+    }
+
+    /* 記録カードの左右余白 */
+    .record-card {
+        padding: 20px 18px;
+    }
+
+    /* 入力画面のボタン */
+    #save-btn,
+    #input-back-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+}
